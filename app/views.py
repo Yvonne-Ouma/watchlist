@@ -3,6 +3,8 @@ from app import app
 from .request import get_movie, get_movies, search_movie
 from .models import review
 from .forms import ReviewForm
+
+
 Review = review.Review
 
 # Views
@@ -38,6 +40,7 @@ def movie(id):
     reviews = Review.get_reviews(movie.id)
 
     return render_template('movie.html',title = title,movie = movie,reviews = reviews)
+
 
 @app.route('/search/<movie_name>')
 def search(movie_name):

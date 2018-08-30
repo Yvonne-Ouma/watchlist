@@ -23,7 +23,7 @@ class Review:
         response = []
 
         for review in cls.all_reviews:
-            if reviews.movie_id == id:
+            if review.movie_id == id:
                 response.append(review)
 
         return response            
