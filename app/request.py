@@ -1,6 +1,5 @@
-# from app import app
 import urllib.request,json # we import the module that will help us connect to our API URL and send a request to json module that will format the JSON response to a python dictionary
-from .models import movie
+from .models import Movie
 
 # Movie = movie.Movie
 
